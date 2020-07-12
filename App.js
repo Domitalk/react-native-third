@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font'
 // extends the splash screen to download font/check if available
 import { AppLoading } from 'expo'
+import MealsNavigator from './navigation/MealsNavigator'
 
 const fetchFonts = () => {
   //this is promise so must return 
@@ -30,10 +31,11 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <MealsNavigator />
+    // <View style={styles.container}>
+    //   <Text>Open up App.js to start working on your app!</Text>
+    //   <StatusBar style="auto" />
+    // </View>
   );
 }
 
